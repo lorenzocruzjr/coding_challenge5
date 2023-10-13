@@ -1,0 +1,277 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 15px;
+}
+
+h2 {
+  padding-top: 29px;
+  color: hsl(35, 77%, 62%);
+  font-size: 42px;
+}
+
+h3 {
+  color: hsl(233, 8%, 79%);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.mainContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.innerContainer {
+  padding: 89px 165px;
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bannerContainer {
+  padding-top: 47px;
+  padding-bottom: 67px;
+}
+
+.headerTxt {
+  padding-top: 30px;
+}
+
+.headerTxt h1 {
+  padding-top: 4px;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: .97;
+}
+
+.readMore {
+  padding: 35px 0 0 2px;
+}
+
+.readMoreContainer p {
+  padding: 0 3px;
+  line-height: 1.555;
+  letter-spacing: .5px;
+}
+
+.readMore a {
+  padding: 15px 30px 16px 31px;
+  background: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.readMore a:hover {
+  background-color: #000;
+}
+
+.navLinks ul {
+  display: flex;
+  margin-top: 8px;
+  padding-right: 7px;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.navLinks ul li a {
+  color: hsl(236, 13%, 42%);
+  text-decoration: none;
+}
+
+.navLinks ul li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.navItem {
+  padding-top: 18px;
+  padding-bottom: 31px;
+}
+
+.navItem:nth-child(2),
+.navItem:nth-child(3) {
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+
+.navItem:nth-child(3), .navItem:nth-child(4) {
+  padding-top: 30px;
+}
+
+.navItem:nth-child(4) {
+  padding-bottom: 33px;
+}
+
+.navItem p {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.navItem p a {
+  color: hsl(36, 100%, 99%);
+  text-decoration: none;
+}
+
+.navItem p a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.sideNav {
+  margin-left: 4px;
+  padding: 0 25px;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.sideNav span {
+  color: hsl(233, 8%, 79%);
+}
+
+.itemBtm p {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.itemBtm p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.itemBtm p a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.item01 {
+  padding-top: 2px;
+}
+
+.item02 h3 {
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.item03 {
+  padding-top: 1px;
+  padding-left: 4px;
+}
+
+.item01 img, .item02 img, .item03 img {
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .innerContainer {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .closeBtn,
+  .menuBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .innerContainer {
+    padding: 0;
+  }
+  header {
+    padding: 15px 15px 0;
+  }
+  .headerTxt h1 {
+    font-size: 44px;
+  }
+  .bannerContainer {
+    width: 400px;
+    padding-top: 23.5px;
+    padding-bottom: 33.5px;
+  }
+  .readMore {
+    padding-bottom: 40px;
+  }
+  .bannerImg, .navContainer {
+    padding-left: calc(var(--bs-gutter-x) * 1);
+  }
+  .sideNav {
+    margin-left: 0;
+  }
+  .item01 {
+    padding-top: 0;
+  }
+  .flexSp01 {
+    padding-left: calc(var(--bs-gutter-x) * 1);
+    flex: 1;
+  }
+  .flexSp02 {
+    flex: 2;
+  }
+  .item01, .item02 {
+    padding-bottom: 40px;
+  }
+  .item03 {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 80px;
+  }
+  .item01 img, .item02 img, .item03 img {
+    margin-top: 0;
+  }
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: -100%;
+    max-width: 275px;
+    width: 100%;
+    height: 100%;
+    background: hsl(36, 100%, 99%);
+    transition: all 0.5s ease;
+  }
+  .navLinks.active {
+    left: auto;
+  }
+  .navLinks ul {
+    display: block;
+    margin-top: 0;
+    padding-top: 94px;
+  }
+  .navLinks ul li {
+    margin-top: 30px;
+  }
+  .navLinks ul li a {
+    color: #000;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .menuBtn {
+    display: block;
+  }
+  .menuBtn.menuBtn.active {
+    display: none;
+  }
+  .menuBtn.menuBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  .navList li:nth-child(1) {
+    margin-top: 0;
+  }
+}
